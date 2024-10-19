@@ -1,0 +1,28 @@
+Command line:
+   Avalon_Master_Slave_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  16556
+
+Fri Jan 13 19:51:45 2023
+
+
+ Elaboration Time: 0.546875 sec
+
+ Current Memory Usage: 5461.65 Meg
+
+ Total Signals          : 105
+ Total Nets             : 524805
+ Total Signal Drivers   : 48
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 23
+ Total Traceable Variables  : 43
+ Total Scalar Nets and Variables : 525994
+
+ Total Simulation Time: 19.3281 sec
+
+ Current Memory Usage: 4989.79 Meg
+
+Fri Jan 13 19:56:28 2023
+

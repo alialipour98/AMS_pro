@@ -1,0 +1,43 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/User/Documents/ISE_Project/AMS/Avalon_Master_Slave_tb_isim_beh.exe" -prj "C:/Users/User/Documents/ISE_Project/AMS/Avalon_Master_Slave_tb_beh.prj" "work.Avalon_Master_Slave_tb" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" into library work
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 123: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 126: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 129: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 132: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 135: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 138: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 141: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 144: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 147: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 150: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 121: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 162: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 169: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:/Users/User/Documents/ISE_Project/AMS/Controller.vhd" Line 190: Case choice must be a locally static expression
+Parsing VHDL file "C:/Users/User/Documents/ISE_Project/AMS/Avalon_Slave.vhd" into library work
+Parsing VHDL file "C:/Users/User/Documents/ISE_Project/AMS/Avalon_Master.vhd" into library work
+Parsing VHDL file "C:/Users/User/Documents/ISE_Project/AMS/Avalon_Master_Slave_Top.vhd" into library work
+Parsing VHDL file "C:/Users/User/Documents/ISE_Project/AMS/Avalon_Master_Slave_tb.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:960 - "C:/Users/User/Documents/ISE_Project/AMS/Avalon_Master_Slave_tb.vhd" Line 173: Expression has incompatible type
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture behavioral of entity Avalon_Master [avalon_master_default]
+Compiling architecture behavioral of entity Avalon_Slave [avalon_slave_default]
+Compiling architecture behavioral of entity Controller [controller_default]
+Compiling architecture behavioral of entity Avalon_Master_Slave_Top [\Avalon_Master_Slave_Top(16,2,16...]
+Compiling architecture behavior of entity avalon_master_slave_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 14 VHDL Units
+Built simulation executable C:/Users/User/Documents/ISE_Project/AMS/Avalon_Master_Slave_tb_isim_beh.exe
+Fuse Memory Usage: 175932 KB
+Fuse CPU Usage: 4562 ms

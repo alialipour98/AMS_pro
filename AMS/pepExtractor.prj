@@ -1,0 +1,4 @@
+work	"Avalon_Master.vhd"
+work	"Avalon_Master_Slave_Top.vhd"
+work	"Avalon_Slave.vhd"
+work	"Controller.vhd"

@@ -1,0 +1,5 @@
+vhdl work "Controller.vhd"
+vhdl work "Avalon_Slave.vhd"
+vhdl work "Avalon_Master.vhd"
+vhdl work "Avalon_Master_Slave_Top.vhd"
+vhdl work "Avalon_Master_Slave_tb.vhd"

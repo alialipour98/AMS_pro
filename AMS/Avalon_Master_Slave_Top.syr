@@ -1,0 +1,638 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Avalon_Master_Slave_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Avalon_Master_Slave_Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Avalon_Master_Slave_Top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : Avalon_Master_Slave_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" into library work
+Parsing entity <Controller>.
+Parsing architecture <Behavioral> of entity <controller>.
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 118: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 121: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 124: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 127: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 130: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 133: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 136: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 139: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 142: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 145: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 116: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 157: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 164: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 185: Case choice must be a locally static expression
+Parsing VHDL file "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Slave.vhd" into library work
+Parsing entity <Avalon_Slave>.
+Parsing architecture <Behavioral> of entity <avalon_slave>.
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Slave.vhd" Line 64: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Slave.vhd" Line 66: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Slave.vhd" Line 68: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Slave.vhd" Line 79: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Slave.vhd" Line 81: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Slave.vhd" Line 83: Case choice must be a locally static expression
+Parsing VHDL file "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Master.vhd" into library work
+Parsing entity <Avalon_Master>.
+Parsing architecture <Behavioral> of entity <avalon_master>.
+Parsing VHDL file "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Master_Slave_Top.vhd" into library work
+Parsing entity <Avalon_Master_Slave_Top>.
+Parsing architecture <Behavioral> of entity <avalon_master_slave_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Avalon_Master_Slave_Top> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Avalon_Master> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Avalon_Slave> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Controller> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd" Line 193. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Avalon_Master_Slave_Top>.
+    Related source file is "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Master_Slave_Top.vhd".
+        AVS_AVALONSLAVE_DATA_WIDTH = 16
+        AVS_AVALONSLAVE_ADDRESS_WIDTH = 2
+        AVM_AVALONMASTER_DATA_WIDTH = 16
+        AVM_AVALONMASTER_ADDRESS_WIDTH = 16
+    Summary:
+	no macro.
+Unit <Avalon_Master_Slave_Top> synthesized.
+
+Synthesizing Unit <Avalon_Master>.
+    Related source file is "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Master.vhd".
+        AVM_AVALONMASTER_DATA_WIDTH = 16
+        AVM_AVALONMASTER_ADDRESS_WIDTH = 16
+WARNING:Xst:647 - Input <AVM_AVALONMASTER_READDATA<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <AVM_AVALONMASTER_WRITE>.
+    Found 16-bit register for signal <AVM_AVALONMASTER_ADDRESS>.
+    Found 1-bit register for signal <AVM_AVALONMASTER_READ>.
+    Summary:
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Avalon_Master> synthesized.
+
+Synthesizing Unit <Avalon_Slave>.
+    Related source file is "C:\Users\User\Documents\ISE_Project\AMS\Avalon_Slave.vhd".
+        AVS_AVALONSLAVE_DATA_WIDTH = 16
+        AVS_AVALONSLAVE_ADDRESS_WIDTH = 2
+    Found 16-bit register for signal <INPUT_ADDRESS_OFFSET>.
+    Found 16-bit register for signal <OUTPUT_ADDRESS_OFFSET>.
+    Found 16-bit register for signal <readData>.
+    Found 16-bit register for signal <CONTROL_REGISTER>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred  22 Multiplexer(s).
+Unit <Avalon_Slave> synthesized.
+
+Synthesizing Unit <Controller>.
+    Related source file is "C:\Users\User\Documents\ISE_Project\AMS\Controller.vhd".
+    Found 1-bit register for signal <go_Int>.
+    Found 8-bit register for signal <din_Int>.
+    Found 1-bit register for signal <readEn_Int>.
+    Found 1-bit register for signal <done_Int>.
+    Found 2-bit register for signal <State>.
+    Found 16-bit register for signal <Cal_Gx>.
+    Found 16-bit register for signal <Cal_Gy>.
+    Found 16-bit register for signal <dinAddr_Int>.
+    Found 8-bit register for signal <row_count>.
+    Found 16-bit register for signal <refAddr>.
+    Found 4-bit register for signal <cnt>.
+    Found 9-bit register for signal <Register_Res<0>>.
+    Found 9-bit register for signal <Register_Res<1>>.
+    Found 9-bit register for signal <Register_Res<2>>.
+    Found 9-bit register for signal <Register_Res<3>>.
+    Found 9-bit register for signal <Register_Res<4>>.
+    Found 9-bit register for signal <Register_Res<5>>.
+    Found 9-bit register for signal <Register_Res<6>>.
+    Found 9-bit register for signal <Register_Res<7>>.
+    Found 9-bit register for signal <Register_Res<8>>.
+    Found 8-bit register for signal <dout_Int>.
+    Found 1-bit register for signal <writeEn_Int>.
+    Found 16-bit register for signal <doutAddr_Int>.
+    Found 1-bit register for signal <rst_Int>.
+    Found finite state machine <FSM_0> for signal <State>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 2                                              |
+    | Clock              | Clock (rising_edge)                            |
+    | Reset              | _n0452 (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit subtractor for signal <Register_Res[2][8]_unary_minus_29_OUT> created at line 167.
+    Found 10-bit subtractor for signal <Register_Res[5][8]_unary_minus_33_OUT> created at line 170.
+    Found 10-bit subtractor for signal <Register_Res[8][8]_unary_minus_37_OUT> created at line 173.
+    Found 10-bit subtractor for signal <Register_Res[6][8]_unary_minus_44_OUT> created at line 181.
+    Found 10-bit subtractor for signal <Register_Res[7][8]_unary_minus_46_OUT> created at line 182.
+    Found 16-bit adder for signal <dinAddr> created at line 90.
+    Found 16-bit adder for signal <doutAddr> created at line 91.
+    Found 16-bit adder for signal <refAddr[15]_GND_7_o_add_7_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_7_o_add_8_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_7_o_add_9_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_7_o_add_10_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_7_o_add_11_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_7_o_add_12_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_7_o_add_13_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_7_o_add_14_OUT> created at line 1241.
+    Found 8-bit adder for signal <row_count[7]_GND_7_o_add_15_OUT> created at line 1241.
+    Found 16-bit adder for signal <refAddr[15]_GND_7_o_add_18_OUT> created at line 1241.
+    Found 4-bit adder for signal <cnt[3]_GND_7_o_add_26_OUT> created at line 1241.
+    Found 16-bit adder for signal <doutAddr_Int[15]_GND_7_o_add_87_OUT> created at line 1241.
+    Found 16-bit adder for signal <_n0432> created at line 175.
+    Found 16-bit adder for signal <_n0433> created at line 175.
+    Found 16-bit adder for signal <_n0434> created at line 175.
+    Found 16-bit adder for signal <_n0435> created at line 175.
+    Found 16-bit adder for signal <Register_Res[0][8]_Register_Res[8][8]_add_48_OUT> created at line 175.
+    Found 16-bit adder for signal <_n0437> created at line 165.
+    Found 16-bit adder for signal <_n0438> created at line 165.
+    Found 16-bit adder for signal <_n0439> created at line 165.
+    Found 16-bit adder for signal <_n0440> created at line 165.
+    Found 16-bit adder for signal <Register_Res[0][8]_Register_Res[8][8]_add_37_OUT> created at line 165.
+    Found 16-bit adder for signal <_n0442> created at line 70.
+    Found 16-bit adder for signal <_n0443> created at line 70.
+    Found 16-bit adder for signal <Cal_Res> created at line 70.
+    Found 16-bit comparator greater for signal <Cal_Res[15]_GND_7_o_LessThan_50_o> created at line 187
+    Summary:
+	inferred  25 Adder/Subtractor(s).
+	inferred 194 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Controller> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 25
+ 10-bit subtractor                                     : 5
+ 16-bit adder                                          : 18
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 30
+ 1-bit register                                        : 7
+ 16-bit register                                       : 10
+ 4-bit register                                        : 1
+ 8-bit register                                        : 3
+ 9-bit register                                        : 9
+# Comparators                                          : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 33
+ 16-bit 2-to-1 multiplexer                             : 32
+ 4-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+# Xors                                                 : 30
+ 1-bit xor2                                            : 30
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <Register_Res_8_8> has a constant value of 0 in block <Edge_Detection>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_7_8> has a constant value of 0 in block <Edge_Detection>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_6_8> has a constant value of 0 in block <Edge_Detection>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_5_8> has a constant value of 0 in block <Edge_Detection>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_4_8> has a constant value of 0 in block <Edge_Detection>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_3_8> has a constant value of 0 in block <Edge_Detection>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_2_8> has a constant value of 0 in block <Edge_Detection>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_1_8> has a constant value of 0 in block <Edge_Detection>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_0_8> has a constant value of 0 in block <Edge_Detection>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Controller>.
+The following registers are absorbed into accumulator <refAddr>: 1 register on signal <refAddr>.
+The following registers are absorbed into counter <doutAddr_Int>: 1 register on signal <doutAddr_Int>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <row_count>: 1 register on signal <row_count>.
+	The following adders/subtractors are grouped into adder tree <Madd_Register_Res[0][8]_Register_Res[8][8]_add_48_OUT1> :
+ 	<Madd__n0432> in block <Controller>, 	<Madd__n0435> in block <Controller>, 	<Madd__n0433> in block <Controller>, 	<Madd__n0434> in block <Controller>.
+	The following adders/subtractors are grouped into adder tree <Madd_Register_Res[0][8]_Register_Res[8][8]_add_37_OUT1> :
+ 	<Madd__n0437> in block <Controller>, 	<Madd__n0440> in block <Controller>, 	<Madd__n0438> in block <Controller>, 	<Madd__n0439> in block <Controller>.
+Unit <Controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 10-bit subtractor                                     : 5
+ 16-bit adder                                          : 4
+ 16-bit adder carry in                                 : 1
+# Adder Trees                                          : 2
+ 16-bit / 6-inputs adder tree                          : 2
+# Counters                                             : 3
+ 16-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 16-bit up accumulator                                 : 1
+# Registers                                            : 232
+ Flip-Flops                                            : 232
+# Comparators                                          : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 62
+ 1-bit 2-to-1 multiplexer                              : 32
+ 16-bit 2-to-1 multiplexer                             : 30
+# FSMs                                                 : 1
+# Xors                                                 : 30
+ 1-bit xor2                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <Register_Res_8_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_7_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_6_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_5_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_4_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_3_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_2_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_1_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Register_Res_0_8> has a constant value of 0 in block <Controller>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Edge_Detection/FSM_0> on signal <State[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+
+Optimizing unit <Avalon_Master_Slave_Top> ...
+
+Optimizing unit <Avalon_Slave> ...
+
+Optimizing unit <Avalon_Master> ...
+
+Optimizing unit <Controller> ...
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/Cal_Gy_15> in Unit <Avalon_Master_Slave_Top> is equivalent to the following 5 FFs/Latches, which will be removed : <Edge_Detection/Cal_Gy_14> <Edge_Detection/Cal_Gy_13> <Edge_Detection/Cal_Gy_12> <Edge_Detection/Cal_Gy_11> <Edge_Detection/Cal_Gy_10> 
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/refAddr_0> in Unit <Avalon_Master_Slave_Top> is equivalent to the following FF/Latch, which will be removed : <Edge_Detection/row_count_0> 
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/refAddr_1> in Unit <Avalon_Master_Slave_Top> is equivalent to the following FF/Latch, which will be removed : <Edge_Detection/row_count_1> 
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/refAddr_2> in Unit <Avalon_Master_Slave_Top> is equivalent to the following FF/Latch, which will be removed : <Edge_Detection/row_count_2> 
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/refAddr_3> in Unit <Avalon_Master_Slave_Top> is equivalent to the following FF/Latch, which will be removed : <Edge_Detection/row_count_3> 
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/refAddr_4> in Unit <Avalon_Master_Slave_Top> is equivalent to the following FF/Latch, which will be removed : <Edge_Detection/row_count_4> 
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/refAddr_5> in Unit <Avalon_Master_Slave_Top> is equivalent to the following FF/Latch, which will be removed : <Edge_Detection/row_count_5> 
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/refAddr_6> in Unit <Avalon_Master_Slave_Top> is equivalent to the following FF/Latch, which will be removed : <Edge_Detection/row_count_6> 
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/refAddr_7> in Unit <Avalon_Master_Slave_Top> is equivalent to the following FF/Latch, which will be removed : <Edge_Detection/row_count_7> 
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/Cal_Gx_15> in Unit <Avalon_Master_Slave_Top> is equivalent to the following 5 FFs/Latches, which will be removed : <Edge_Detection/Cal_Gx_14> <Edge_Detection/Cal_Gx_13> <Edge_Detection/Cal_Gx_12> <Edge_Detection/Cal_Gx_11> <Edge_Detection/Cal_Gx_10> 
+INFO:Xst:2261 - The FF/Latch <Edge_Detection/Cal_Gy_0> in Unit <Avalon_Master_Slave_Top> is equivalent to the following FF/Latch, which will be removed : <Edge_Detection/Cal_Gx_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Avalon_Master_Slave_Top, actual ratio is 9.
+
+Final Macro Processing ...
+
+Processing Unit <Avalon_Master_Slave_Top> :
+	Found 2-bit shift register for signal <Edge_Detection/Register_Res_3_7>.
+	Found 2-bit shift register for signal <Edge_Detection/Register_Res_3_6>.
+	Found 2-bit shift register for signal <Edge_Detection/Register_Res_3_5>.
+	Found 2-bit shift register for signal <Edge_Detection/Register_Res_3_4>.
+	Found 2-bit shift register for signal <Edge_Detection/Register_Res_3_3>.
+	Found 2-bit shift register for signal <Edge_Detection/Register_Res_3_2>.
+	Found 2-bit shift register for signal <Edge_Detection/Register_Res_3_1>.
+	Found 2-bit shift register for signal <Edge_Detection/Register_Res_3_0>.
+Unit <Avalon_Master_Slave_Top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 234
+ Flip-Flops                                            : 234
+# Shift Registers                                      : 8
+ 2-bit shift register                                  : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Avalon_Master_Slave_Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 823
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 44
+#      LUT2                        : 128
+#      LUT3                        : 127
+#      LUT4                        : 62
+#      LUT5                        : 28
+#      LUT6                        : 69
+#      MUXCY                       : 180
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 180
+# FlipFlops/Latches                : 242
+#      FD                          : 21
+#      FDE                         : 196
+#      FDR                         : 4
+#      FDRE                        : 21
+# Shift Registers                  : 8
+#      SRLC16E                     : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 80
+#      IBUF                        : 29
+#      OBUF                        : 51
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             242  out of  11440     2%  
+ Number of Slice LUTs:                  468  out of   5720     8%  
+    Number used as Logic:               460  out of   5720     8%  
+    Number used as Memory:                8  out of   1440     0%  
+       Number used as SRL:                8
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    528
+   Number with an unused Flip Flop:     286  out of    528    54%  
+   Number with an unused LUT:            60  out of    528    11%  
+   Number of fully used LUT-FF pairs:   182  out of    528    34%  
+   Number of unique control sets:        14
+
+IO Utilization: 
+ Number of IOs:                          89
+ Number of bonded IOBs:                  81  out of    102    79%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CSI_CLOCK_CLK                      | BUFGP                  | 250   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 7.526ns (Maximum Frequency: 132.873MHz)
+   Minimum input arrival time before clock: 5.302ns
+   Maximum output required time after clock: 5.056ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CSI_CLOCK_CLK'
+  Clock period: 7.526ns (frequency: 132.873MHz)
+  Total number of paths / destination ports: 46610 / 393
+-------------------------------------------------------------------------
+Delay:               7.526ns (Levels of Logic = 13)
+  Source:            Edge_Detection/Register_Res_2_4 (FF)
+  Destination:       Edge_Detection/Cal_Gx_15 (FF)
+  Source Clock:      CSI_CLOCK_CLK rising
+  Destination Clock: CSI_CLOCK_CLK rising
+
+  Data Path: Edge_Detection/Register_Res_2_4 to Edge_Detection/Cal_Gx_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.525   1.306  Edge_Detection/Register_Res_2_4 (Edge_Detection/Register_Res_2_4)
+     LUT6:I1->O            3   0.254   0.766  Edge_Detection/Msub_Register_Res[2][8]_unary_minus_29_OUT_xor<6>111 (Edge_Detection/Msub_Register_Res[2][8]_unary_minus_29_OUT_xor<6>11)
+     LUT3:I2->O           16   0.254   1.290  Edge_Detection/Register_Res[2][8]_unary_minus_29_OUT<8>1 (Edge_Detection/Register_Res[2][8]_unary_minus_29_OUT<8>)
+     LUT2:I0->O            1   0.250   0.682  Edge_Detection/ADDERTREE_INTERNAL_Madd18 (Edge_Detection/ADDERTREE_INTERNAL_Madd18)
+     LUT3:I2->O            1   0.254   0.000  Edge_Detection/ADDERTREE_INTERNAL_Madd1_lut<0>9 (Edge_Detection/ADDERTREE_INTERNAL_Madd1_lut<0>9)
+     MUXCY:S->O            1   0.215   0.000  Edge_Detection/ADDERTREE_INTERNAL_Madd1_cy<0>_8 (Edge_Detection/ADDERTREE_INTERNAL_Madd1_cy<0>9)
+     MUXCY:CI->O           1   0.023   0.000  Edge_Detection/ADDERTREE_INTERNAL_Madd1_cy<0>_9 (Edge_Detection/ADDERTREE_INTERNAL_Madd1_cy<0>10)
+     MUXCY:CI->O           1   0.023   0.000  Edge_Detection/ADDERTREE_INTERNAL_Madd1_cy<0>_10 (Edge_Detection/ADDERTREE_INTERNAL_Madd1_cy<0>11)
+     MUXCY:CI->O           1   0.023   0.000  Edge_Detection/ADDERTREE_INTERNAL_Madd1_cy<0>_11 (Edge_Detection/ADDERTREE_INTERNAL_Madd1_cy<0>12)
+     MUXCY:CI->O           1   0.023   0.000  Edge_Detection/ADDERTREE_INTERNAL_Madd1_cy<0>_12 (Edge_Detection/ADDERTREE_INTERNAL_Madd1_cy<0>13)
+     XORCY:CI->O           1   0.206   0.682  Edge_Detection/ADDERTREE_INTERNAL_Madd1_xor<0>_13 (Edge_Detection/ADDERTREE_INTERNAL_Madd_141)
+     LUT2:I1->O            1   0.254   0.000  Edge_Detection/ADDERTREE_INTERNAL_Madd4_lut<14> (Edge_Detection/ADDERTREE_INTERNAL_Madd4_lut<14>)
+     MUXCY:S->O            0   0.215   0.000  Edge_Detection/ADDERTREE_INTERNAL_Madd4_cy<14> (Edge_Detection/ADDERTREE_INTERNAL_Madd4_cy<14>)
+     XORCY:CI->O           1   0.206   0.000  Edge_Detection/ADDERTREE_INTERNAL_Madd4_xor<15> (Edge_Detection/ADDERTREE_INTERNAL_Madd_154)
+     FDRE:D                    0.074          Edge_Detection/Cal_Gx_15
+    ----------------------------------------
+    Total                      7.526ns (2.800ns logic, 4.726ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CSI_CLOCK_CLK'
+  Total number of paths / destination ports: 507 / 139
+-------------------------------------------------------------------------
+Offset:              5.302ns (Levels of Logic = 2)
+  Source:            AVS_AVALONSLAVE_ADDRESS<1> (PAD)
+  Destination:       Avalon_Slave_Interface/CONTROL_REGISTER_15 (FF)
+  Destination Clock: CSI_CLOCK_CLK rising
+
+  Data Path: AVS_AVALONSLAVE_ADDRESS<1> to Avalon_Slave_Interface/CONTROL_REGISTER_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            68   1.328   2.237  AVS_AVALONSLAVE_ADDRESS_1_IBUF (AVS_AVALONSLAVE_ADDRESS_1_IBUF)
+     LUT4:I0->O           16   0.254   1.181  Avalon_Slave_Interface/_n0175_inv1 (Avalon_Slave_Interface/_n0175_inv)
+     FDE:CE                    0.302          Avalon_Slave_Interface/CONTROL_REGISTER_0
+    ----------------------------------------
+    Total                      5.302ns (1.884ns logic, 3.418ns route)
+                                       (35.5% logic, 64.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CSI_CLOCK_CLK'
+  Total number of paths / destination ports: 43 / 43
+-------------------------------------------------------------------------
+Offset:              5.056ns (Levels of Logic = 1)
+  Source:            Edge_Detection/readEn_Int (FF)
+  Destination:       AVM_AVALONMASTER_WAITREQUEST (PAD)
+  Source Clock:      CSI_CLOCK_CLK rising
+
+  Data Path: Edge_Detection/readEn_Int to AVM_AVALONMASTER_WAITREQUEST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              38   0.525   1.619  Edge_Detection/readEn_Int (Edge_Detection/readEn_Int)
+     OBUF:I->O                 2.912          AVM_AVALONMASTER_WAITREQUEST_OBUF (AVM_AVALONMASTER_WAITREQUEST)
+    ----------------------------------------
+    Total                      5.056ns (3.437ns logic, 1.619ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CSI_CLOCK_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CSI_CLOCK_CLK  |    7.526|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.43 secs
+ 
+--> 
+
+Total memory usage is 4502540 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

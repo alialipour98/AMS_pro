@@ -1,0 +1,5 @@
+vhdl isim_temp "Controller.vhd"
+vhdl isim_temp "Avalon_Slave.vhd"
+vhdl isim_temp "Avalon_Master.vhd"
+vhdl isim_temp "Avalon_Master_Slave_Top.vhd"
+vhdl isim_temp "Avalon_Master_Slave_tb.vhd"
